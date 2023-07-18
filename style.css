@@ -111,6 +111,25 @@ li a{
       margin-left: -1px;
       
 }
+      /*-------- funny video section style start-------- */
+.videos-row{
+      width: 80%;
+      margin:50px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+}
+.videos-row img{
+      width: 100%;
+}
+.main-content{
+      width: 80%;
+      text-align: center;
+      margin: 50px auto;
+}
+.funny-paragraph{
+      margin: 10px 0;
+}
       /*----------- responsive------------ */
 @media screen and (max-width: 576px){
       nav{
