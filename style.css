@@ -60,6 +60,57 @@ li a{
       color: red;
 }
 
+            /* hero section style start */
+
+#hero{
+      background: url('images/Group14.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      
+}
+#hero .hero-row{
+      width: 80%;
+      margin: auto;
+      padding: 25px 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      align-items: center;
+
+
+}
+.hero-image img{
+      width: 100%;
+}
+.hero-content ul{
+      margin: 10px 0;
+}
+.hero-content ul li i{
+      color: var(--primary-color);
+      margin-right: 10px;
+}
+.hero-btn{
+      margin: 10px 0;
+}
+.hero-btn .hero-btn1{
+      padding: 10px 30px;
+      border: none;
+      margin-right: 10px;
+      background-color: var(--primary-color);
+      border-radius: 50px;
+      color: white;
+}
+.hero-btn .hero-btn2{
+      padding: 10px 30px;
+      border: none;
+      background-color: #4EC5F7;
+      border-radius: 50px;
+      color: white;
+}
+.hero-content ul li{
+      list-style: none;
+      margin-left: -1px;
+      
+}
       /*----------- responsive------------ */
 @media screen and (max-width: 576px){
       nav{
@@ -70,6 +121,12 @@ li a{
       ul{
             flex-direction: column;
             
+      }
+      .hero-image{
+            order: 1;
+      }
+      .hero-content{
+            order: 2;
       }
       
 }
