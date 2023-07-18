@@ -119,6 +119,37 @@ li a{
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 20px;
 }
+.video-item {
+      position: relative;
+    }
+.image {
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+.middle {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%)
+    }
+.video-item:hover .image{
+      opacity: 0.5;
+    }
+    .text {
+      color: black;
+      font-size: 50px;
+      margin-bottom: 60px;
+    }
+.video-item:hover .middle{
+      opacity: 1;
+}
 .videos-row img{
       width: 100%;
 }
@@ -130,6 +161,31 @@ li a{
 .funny-paragraph{
       margin: 10px 0;
 }
+      /* ----------instant section style start-------- */
+      .instant-row{
+            width: 80%;
+            margin:50px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            align-items: center;
+            gap: 20px;
+      }
+      .instant-content{
+            padding-right: 220px;
+            text-align: right;
+      }
+      .instant-heading{
+            font-size: 40px;
+      }
+      .instant-image .instant-img1{
+            width: 100%;
+      }
+      .instant-image .instant-img2{
+            width: 50%;
+            position: relative;
+            top: -240px;
+            left: -140px;
+      }
       /*----------- responsive------------ */
 @media screen and (max-width: 576px){
       nav{
@@ -147,5 +203,16 @@ li a{
       .hero-content{
             order: 2;
       }
+      .instant-content{
+            margin: 20px 0;
+            padding-right: 0;
+            text-align: center;
+      }
       
+}
+@media screen and (min-width: 768px) and (max-width:992px){
+      .instant-content{
+            text-align: center;
+            padding-right: 0;
+      }
 }
