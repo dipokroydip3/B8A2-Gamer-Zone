@@ -224,36 +224,7 @@ li a{
             top: 350px;
             left: -30%;
       }
-
-            /* ---------careers section style start----------- */
-      #careers{
-            background-color: var(--primary-color);
-            display: none;
-            
-      }
-      .careers-main{
-            background: url('images/Group65.png');
-            width: 100%;
-            background-repeat: no-repeat;
-            background-position: right;
-            background-size: contain;   
-      }
-      .careers-content{
-            color: white;
-      }
-      .careers-row{
-            width: 80%;
-            margin: auto;
-            padding: 100px 0;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      }
-      .careers-list{
-            display: flex;
-            justify-content: space-between;
-            margin: 40px 0;
-            color: white;
-      }
+   
             /* -----------our games section style start----------- */
       .games-row{
             width: 80%;
@@ -399,7 +370,7 @@ li a{
       
       
 }
-@media screen and (min-width: 768px){
+@media screen and (max-width: 768px){
       .instant-content{
             text-align: center;
             padding-right: 0;
@@ -419,7 +390,7 @@ li a{
             top: 430px;
       }
 }
-@media screen and (max-width:992px){
+/* @media screen and (max-width:992px){
       .instant-image .position-img{
             left: -100px;
             top: 200px;
@@ -427,4 +398,4 @@ li a{
       .instant-content{
             margin-right: 100px;
       }
-}
+} */
