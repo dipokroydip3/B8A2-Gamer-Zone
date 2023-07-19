@@ -7,7 +7,7 @@
 :root{
       --primary-color:   #FF42A5;
       --paragraph-text-color: #534C64;
-      --title-text-color: (180deg, #F948B2 0%, #8758F1 100%);
+      --linner-color : linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
 }
 
 header{
@@ -20,6 +20,15 @@ header nav{
       width: 80%;
       margin: auto;
       padding: 25px 0;
+}
+.header-btn i{
+      font-size: 20px;
+}
+.header-btn .youtube{
+      color: red;
+}
+.header-btn .facebook{
+      color: rgb(74, 74, 255);
 }
 .web-name{
       display: flex;
@@ -78,6 +87,12 @@ li a{
 
 
 }
+.linear-text{
+      background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
 .hero-image img{
       width: 100%;
 }
@@ -118,6 +133,12 @@ li a{
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 20px;
+}
+.pink-text{
+      background: var(--linner-color);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
 }
 .video-item {
       position: relative;
@@ -181,6 +202,12 @@ li a{
             padding-right: 220px;
             text-align: right;
       }
+      .instant-content .pink-color{
+            background: var(--linner-color);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+      }
       .instant-heading{
             font-size: 40px;
       }
@@ -226,7 +253,7 @@ li a{
             /* -----------our games section style start----------- */
       .games-row{
             width: 80%;
-            margin: auto;
+            margin:100px auto;
       }
       .games-top{
             display: flex;
@@ -264,21 +291,25 @@ li a{
             background-color: black;
       }
       .footer-row{
-            width: 50%;
+            width: fit-content;
             color: white;
             margin: 0 auto;
-            text-align: center;
             padding: 100px 0;
-            border: 1px solid white;
+            text-align: center;
+            
       }
       .footer-heading{
             display: flex;
             margin: 0 auto;
+            padding: 20px 0;
+            justify-content: center;
       }
       .footer-row1 ul{
-            display: flex;
-            margin: 25px 0;
+            display: grid;
+            grid-template-columns:repeat(6, 1fr);
+            gap: 20px;
             justify-content: space-between;
+            align-items: center;
       }
       .footer-row1 ul li{
             list-style: none;
@@ -286,16 +317,20 @@ li a{
       }
       .footer-icons{
             display: flex;
+            justify-content: center;
             margin: 50px auto;
             text-align: center;
       }
       .footer-icons i{
             margin: 0 20px;
+            font-size: 35px;
       }
       .trems ul{
-            display: flex;
-            margin: 0 15px;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            
+            justify-content: center;
+            align-items: center;
       }
       .trems ul li{
             margin: 0 15px;
@@ -324,11 +359,49 @@ li a{
             padding-right: 0;
             text-align: center;
       }
+      .footer-row1 ul li{
+            margin: 10px 0;
+      }
+      .trems ul li{
+            margin: 10px 0;
+            
+      }
+      .trems ul{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            
+      }
+      .footer-row1 ul{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+      }
+      .games-row{
+            display: flex;
+      }
+      .games-top{
+            flex-direction: column-reverse;
+            top: 0;
+      }
+      .games-bottom{
+            flex-direction: column-reverse;
+            margin: 0;
+            
+      }
       
 }
 @media screen and (min-width: 768px) and (max-width:992px){
       .instant-content{
             text-align: center;
             padding-right: 0;
+      }
+      .footer-row1 ul{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+      }
+      .trems ul{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;     
       }
 }
