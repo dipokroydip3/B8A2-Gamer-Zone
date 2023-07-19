@@ -192,7 +192,7 @@ li a{
       /* ----------instant section style start-------- */
       .instant-row{
             width: 80%;
-            margin:50px auto;
+            margin:100px auto;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             align-items: center;
@@ -211,14 +211,18 @@ li a{
       .instant-heading{
             font-size: 40px;
       }
+      .instant-image{
+            position: relative;
+      }
       .instant-image .instant-img1{
             width: 100%;
       }
-      .instant-image .instant-img2{
-            width: 50%;
-            position: relative;
-            top: -240px;
-            left: -140px;
+      .instant-image .position-img{
+            width: 250px;
+            display: block;
+            position: absolute;
+            top: 350px;
+            left: -30%;
       }
 
             /* ---------careers section style start----------- */
@@ -253,7 +257,7 @@ li a{
             /* -----------our games section style start----------- */
       .games-row{
             width: 80%;
-            margin:100px auto;
+            margin:200px auto;
       }
       .games-top{
             display: flex;
@@ -270,7 +274,7 @@ li a{
       .games-item{
             display: flex;
             align-items: center;
-            padding: 5px 10px;
+            padding: 5px 0px;
             border: 1px solid transparent;
             transition: 0.2s all ease;
             
@@ -378,6 +382,7 @@ li a{
       }
       .games-row{
             display: flex;
+            justify-content: space-between;
       }
       .games-top{
             flex-direction: column-reverse;
@@ -385,12 +390,16 @@ li a{
       }
       .games-bottom{
             flex-direction: column-reverse;
-            margin: 0;
-            
+            margin: 0; 
+      }
+      .instant-image .position-img{
+            left: 0;
+            top: 250px;
       }
       
+      
 }
-@media screen and (min-width: 768px) and (max-width:992px){
+@media screen and (min-width: 768px){
       .instant-content{
             text-align: center;
             padding-right: 0;
@@ -403,5 +412,19 @@ li a{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;     
+      }
+      
+      .instant-image .position-img{
+            left: 0;
+            top: 430px;
+      }
+}
+@media screen and (max-width:992px){
+      .instant-image .position-img{
+            left: -100px;
+            top: 200px;
+      }
+      .instant-content{
+            margin-right: 100px;
       }
 }
