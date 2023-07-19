@@ -143,9 +143,16 @@ li a{
       opacity: 0.5;
     }
     .text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       color: black;
       font-size: 50px;
       margin-bottom: 60px;
+    }
+    .watch-now{
+      color: var(--primary-color);
+      margin: 30px 0;
     }
 .video-item:hover .middle{
       opacity: 1;
@@ -190,7 +197,50 @@ li a{
             /* ---------careers section style start----------- */
       #careers{
             background-color: var(--primary-color);
+            display: none;
+            
       }
+      .careers-main{
+            background: url('images/Group65.png');
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;   
+      }
+      .careers-content{
+            color: white;
+      }
+      .careers-row{
+            width: 80%;
+            margin: auto;
+            padding: 100px 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
+      .careers-list{
+            display: flex;
+            justify-content: space-between;
+            margin: 40px 0;
+            color: white;
+      }
+            /* -----------our games section style start----------- */
+      .games-row{
+            width: 80%;
+            margin: auto;
+      }
+      .games-top{
+            display: flex;
+            justify-content: space-between;
+      }
+      .games-bottom{
+            display: flex;
+            justify-content: space-around;
+      }
+      .games-item{
+            display: flex;
+            align-items: center;
+      }
+      
       /*----------- responsive------------ */
 @media screen and (max-width: 576px){
       nav{
